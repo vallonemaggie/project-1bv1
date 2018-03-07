@@ -1,32 +1,38 @@
+$primary-color: #f1f1f1;
+
+
 body {
     background-color: #f1f1f1;
     padding: 20px;
     font-family: Arial;
 }
 
+img {
+    width: 600px;
+}
 
 #container {
     width: 960px;
     margin: 0 auto;
 }
 
-.logo{
+.logo {
     width: 100px;
     float: right;
     resize: both;
     flex: 1;
 }
 
-ul#nav{
+ul#nav {
     width: 550px;
     list-style: none;
     overflow: hidden;
     margin: 50px auto 25px auto;
     flex: 1;
-    
-    
-    
-    li{
+
+
+
+    li {
         width: 126px;
         height: 33px;
         float: left;
@@ -38,12 +44,19 @@ ul#nav{
     }
 }
 
+#queenstown{
+    padding: 5px;
+    border: 5px solid black;
+    background-color: black;
+}
+
 * {
     box-sizing: border-box;
 }
 
 
 /* Center website */
+
 .main {
     max-width: 1000px;
     margin: auto;
@@ -58,18 +71,21 @@ h1 {
 }
 
 /* Add padding BETWEEN each column (if you want) */
+
 .row,
 .row > .column {
     padding: 8px;
 }
 
 /* Create four equal columns that floats next to each other */
+
 .column {
     float: left;
     width: 25%;
 }
 
-/* Clear floats after rows */ 
+/* Clear floats after rows */
+
 .row:after {
     content: "";
     display: table;
@@ -83,15 +99,16 @@ h1 {
 }
 
 .content:hover {
-   transform: scale(1.2);
-    
+    transform: scale(1.2);
+
 }
 
 
 @media (max-width: 900px) {
     .column {
         width: 50%;
-    };
+    }
+    ;
 }
 
 
@@ -102,7 +119,8 @@ h1 {
 }
 
 /*overlay*/
-.overlay{
+
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -110,15 +128,19 @@ h1 {
     height: 100%;
     background-color: #000;
 }
+
 /*Start of Contact*/
-input[type=text], select, textarea {
-    width: 100%; 
-    padding: 12px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
     resize: vertical;
 }
 
@@ -140,6 +162,7 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
 }
+
 /*End of Contact*/
 
 /*image pop out*/
@@ -150,10 +173,11 @@ input[type=submit]:hover {
     transition: .03s;
 }
 
-#boat:hover{
+#boat:hover {
     opacity: 0.7;
 }
-.modal{
+
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -163,8 +187,8 @@ input[type=submit]:hover {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
@@ -186,37 +210,103 @@ input[type=submit]:hover {
 }
 
 /* animation */
-.modal-content, #caption {
+
+.modal-content,
+#caption {
     animation-name: zoom;
     animation-duration: .6s;
 }
 
 @keyframes zoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
 }
 
 /* close button */
 
-.close{
+.close {
     position: absolute;
     top: 15px;
     right: 35px;
-    color: #f1f1f1;
+    color: $primary-color;
     font-size: 40px;
     font-weight: bold;
     transition: .3s;
 }
 
-.close:hover, .close:focus{
-    color:#bbb;
+.close:hover,
+.close:focus {
+    color: #bbb;
     text-decoration: none;
     cursor: pointer;
 }
 
 /*small screens*/
-@media only screen and (max-width: 700px){
+
+@media only screen and (max-width: 700px) {
     .modal-content {
         width: 100%;
     }
+}
+
+/* Form style */
+
+input {
+    width: 100%;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus{
+    border: 3px solid purple;
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: #555 solid;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+/* Start of skill bar*/
+
+.container2{
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skills{
+    text-align: right;
+    padding-right: 20px;
+    line-height: 40px;
+    color: white;
+}
+
+.adobesuite { 
+    width: 80%;
+    background-color: #4CAF50;
+}
+
+.animation {
+    width: 55%;
+    background-color: #2196F3;
+}
+
+.photo{
+    width: 75%;
+    background-color: #F44336;
+}
+
+.design{
+    width: 70%;
+    background-color: #908AD6;
 }

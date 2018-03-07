@@ -3,6 +3,9 @@ body {
   padding: 20px;
   font-family: Arial; }
 
+img {
+  width: 600px; }
+
 #container {
   width: 960px;
   margin: 0 auto; }
@@ -28,6 +31,11 @@ ul#nav {
     font-weight: bold;
     text-align: center;
     text-transform: uppercase; }
+
+#queenstown {
+  padding: 5px;
+  border: 5px solid black;
+  background-color: black; }
 
 * {
   box-sizing: border-box; }
@@ -82,7 +90,9 @@ h1 {
   background-color: #000; }
 
 /*Start of Contact*/
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -148,7 +158,8 @@ input[type=submit]:hover {
   height: 150px; }
 
 /* animation */
-.modal-content, #caption {
+.modal-content,
+#caption {
   animation-name: zoom;
   animation-duration: .6s; }
 
@@ -167,7 +178,8 @@ input[type=submit]:hover {
   font-weight: bold;
   transition: .3s; }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer; }
@@ -176,5 +188,51 @@ input[type=submit]:hover {
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%; } }
+/* Form style */
+input {
+  width: 100%; }
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box; }
+
+input[type=text]:focus {
+  border: 3px solid purple; }
+
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: #555 solid;
+  border-radius: 4px;
+  background-color: #f1f1f1; }
+
+/* Start of skill bar*/
+.container2 {
+  width: 100%;
+  background-color: #ddd; }
+
+.skills {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  color: white; }
+
+.adobesuite {
+  width: 80%;
+  background-color: #4CAF50; }
+
+.animation {
+  width: 55%;
+  background-color: #2196F3; }
+
+.photo {
+  width: 75%;
+  background-color: #F44336; }
+
+.design {
+  width: 70%;
+  background-color: #908AD6; }
 
 /*# sourceMappingURL=stylesheet.css.map */

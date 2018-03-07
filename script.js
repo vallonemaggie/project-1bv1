@@ -5,11 +5,12 @@ var modal = document.getElementById('myModal');
 var img = document.getElementById('boat');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img.onclick = function(){
+
+$("img").click(function(){
     modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
+    modalImg.src = $(this).attr("src");
+    captionText.innerHTML = $(this).attr("alt");
+});
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
